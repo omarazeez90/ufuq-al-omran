@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="title_about">عن الشركة | أفق العمران</title>
+  <meta name="description" content="معلومات عن شركة أفق العمران في مجالات المقاولات والتجارة والنقل.">
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html" data-i18n="site_name">أفق العمران</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html" data-i18n="nav_about">عن الشركة</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav_services">الخدمات</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html" data-i18n="nav_portfolio">الأعمال</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html" data-i18n="nav_team">الفريق</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html" data-i18n="nav_faq">الأسئلة</a></li>
+        </ul>
+        <div class="lang-toggle d-flex align-items-center gap-3">
+
+          <!-- زر الوضع الليلي -->
+          <span class="theme-toggle" title="الوضع الليلي">
+            <button id="toggle-dark" class="btn btn-sm btn-outline-light px-2 py-1">
+              🌙
+            </button>
+          </span>
+
+          <!-- خيارات اللغة -->
+          <span class="lang-option flag-icon" data-lang="en">
+            <img src="assets/icon/flags/us.svg" alt="EN" class="flag"> EN
+          </span>
+          |
+          <span class="lang-option flag-icon" data-lang="ar">
+            <img src="assets/icon/flags/iq.svg" alt="AR" class="flag"> عربي
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <main class="container my-5 text-center">
+    <h1 class="mb-4" data-i18n="about_heading">عن الشركة</h1>
+    <p class="mb-4" data-i18n="about_text">
+      شركة أفق العمران هي شركة عراقية تأسست بهدف النهوض بقطاع البناء والاستثمار من خلال تقديم حلول متكاملة وعالية الجودة في المقاولات، التجارة، والنقل. نعمل في بيئة تتسم بالتحديات، لكننا نؤمن أن الجودة، الالتزام، والتخطيط الجيد هي مفاتيح النجاح.
+    </p>
+    <h2 class="mt-5 mb-3" data-i18n="vision_heading">رؤيتنا</h2>
+    <p data-i18n="vision_text">
+      رؤيتنا أن نكون الخيار الأول على مستوى العراق والشرق الأوسط في تقديم خدمات هندسية وتطوير عقاري مبتكر يحقق أعلى مستويات الرضا للعملاء.
+    </p>
+    <h2 class="mt-5 mb-3" data-i18n="mission_heading">رسالتنا</h2>
+    <p data-i18n="mission_text">
+      نسعى لتوفير حلول فعالة ومستدامة في كافة مشاريعنا، مع التركيز على التطوير المستمر والالتزام الكامل بمواعيد التسليم وجودة التنفيذ.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light py-3 text-center mt-auto">
+    <p class="mb-0" data-i18n="footer">&copy; 2025 أفق العمران - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+  <script defer src="lang.js"></script>
+  <script defer src="script.js"></script>
+
+  <a href="https://wa.me/9647700000000" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <img src="assets/icon/whatsapp.svg" alt="WhatsApp" width="48" height="48" />
+  </a>
+
+</body>
+</html>

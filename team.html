@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="title_team">فريق العمل | أفق العمران</title>
+  <meta name="description" content="تعرف على فريق شركة أفق العمران – مهندسون وخبراء في الإدارة والتطوير.">
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html" data-i18n="site_name">أفق العمران</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav_about">عن الشركة</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav_services">الخدمات</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html" data-i18n="nav_portfolio">الأعمال</a></li>
+          <li class="nav-item"><a class="nav-link active" href="team.html" data-i18n="nav_team">الفريق</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html" data-i18n="nav_faq">الأسئلة</a></li>
+        </ul>
+        <div class="lang-toggle d-flex align-items-center gap-3">
+
+          <!-- زر الوضع الليلي -->
+          <span class="theme-toggle" title="الوضع الليلي">
+            <button id="toggle-dark" class="btn btn-sm btn-outline-light px-2 py-1">
+              🌙
+            </button>
+          </span>
+
+          <!-- خيارات اللغة -->
+          <span class="lang-option flag-icon" data-lang="en">
+            <img src="assets/icon/flags/us.svg" alt="EN" class="flag"> EN
+          </span>
+          |
+          <span class="lang-option flag-icon" data-lang="ar">
+            <img src="assets/icon/flags/iq.svg" alt="AR" class="flag"> عربي
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Team Section -->
+  <main class="container my-5 text-center">
+    <h1 class="mb-4" data-i18n="team_heading">فريق العمل</h1>
+    <p class="mb-5" data-i18n="team_intro">يضم فريقنا نخبة من الخبراء في الإدارة والهندسة وتطوير الأعمال.</p>
+
+    <div class="row team-grid">
+      <div class="col-md-4" data-aos="fade-up">
+        <img src="assets/team1.jpg" class="img-fluid rounded-circle mb-3" data-i18n-alt="member_1_alt" alt="" loading="lazy" />
+        <h5 data-i18n="member_1_name">م. أحمد الزكريا</h5>
+        <p data-i18n="member_1_title">المدير الإداري</p>
+        <p data-i18n="member_1_bio">يشرف أحمد على سير العمليات الإدارية داخل الشركة ويضمن كفاءة النظام التنظيمي. يتمتع بخلفية هندسية وخبرة في القيادة الإدارية، مما يجعله عنصرًا أساسيًا في التخطيط ومراقبة الأداء.</p>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/team3.jpg" class="img-fluid rounded-circle mb-3" data-i18n-alt="member_3_alt" alt="" loading="lazy" />
+        <h5 data-i18n="member_3_name">م. براء الطائي</h5>
+        <p data-i18n="member_3_title">شريك إداري في الأعمال</p>
+        <p data-i18n="member_3_bio">يساهم براء في تطوير الأعمال والعمليات الإدارية على حد سواء. وتُمكّنه خبرته المتنوعة من إدارة المشاريع الداخلية وبناء علاقات استراتيجية مع الشركاء والمستثمرين.</p>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/team2.jpg" class="img-fluid rounded-circle mb-3" data-i18n-alt="member_2_alt" alt="" loading="lazy" />
+        <h5 data-i18n="member_2_name">نانسي عجرم</h5>
+        <p data-i18n="member_2_title">السكرتيرة التنفيذية</p>
+        <p data-i18n="member_2_bio">تقوم نانسي بترتيب جداول المدراء التنفيذيين، وإدارة المراسلات، وضمان التواصل الفعّال بين الأقسام المختلفة. تعتبر دقتها ومهنيتها من العوامل الرئيسية في تعزيز كفاءة الإدارة العليا.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light py-3 text-center mt-auto">
+    <p class="mb-0" data-i18n="footer">&copy; 2025 أفق العمران - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+  <script defer src="lang.js"></script>
+  <script defer src="script.min.js"></script>
+
+</body>
+</html>

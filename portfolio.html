@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="title_portfolio">أعمالنا | أفق العمران</title>
+  <meta name="description" content="نماذج من مشاريع شركة أفق العمران في المقاولات والاستثمار.">
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html" data-i18n="site_name">أفق العمران</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav_about">عن الشركة</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav_services">الخدمات</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html" data-i18n="nav_portfolio">الأعمال</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html" data-i18n="nav_team">الفريق</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html" data-i18n="nav_faq">الأسئلة</a></li>
+        </ul>
+        <div class="lang-toggle d-flex align-items-center gap-3">
+
+          <!-- زر الوضع الليلي -->
+          <span class="theme-toggle" title="الوضع الليلي">
+            <button id="toggle-dark" class="btn btn-sm btn-outline-light px-2 py-1">
+              🌙
+            </button>
+          </span>
+
+          <!-- خيارات اللغة -->
+          <span class="lang-option flag-icon" data-lang="en">
+            <img src="assets/icon/flags/us.svg" alt="EN" class="flag"> EN
+          </span>
+          |
+          <span class="lang-option flag-icon" data-lang="ar">
+            <img src="assets/icon/flags/iq.svg" alt="AR" class="flag"> عربي
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Portfolio -->
+  <main class="container my-5 text-center">
+    <h1 class="mb-4" data-i18n="portfolio_heading">مشاريعنا السابقة</h1>
+    <p class="mb-5" data-i18n="portfolio_intro">
+      نقدم فيما يلي مجموعة مختارة من المشاريع التي تم تنفيذها بنجاح في مختلف القطاعات.
+    </p>
+
+    <div class="row g-4 portfolio-modern">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="project-card" onclick="openModal('assets/portfolio1.webp')">
+          <img src="assets/portfolio1.jpg" alt="مشروع سكني 1" loading="lazy" />
+          <div class="project-content p-3">
+            <h5 data-i18n="project_1_title">مجمع سكني – الموصل</h5>
+            <p data-i18n="project_1_desc">تصميم وتنفيذ 40 وحدة سكنية بخدمات متكاملة في حي الحدباء.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="project-card" onclick="openModal('assets/portfolio2.webp')">
+          <img src="assets/portfolio2.jpg" alt="مشروع تجاري 2" loading="lazy" />
+          <div class="project-content p-3">
+            <h5 data-i18n="project_2_title">مركز تجاري – أربيل</h5>
+            <p data-i18n="project_2_desc">بناء مركز تجاري متعدد الطوابق مع مواقف ومصاعد ذكية.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="project-card" onclick="openModal('assets/portfolio3.webp')">
+          <img src="assets/portfolio3.jpg" alt="مشروع مستودعات 3" loading="lazy" />
+          <div class="project-content p-3">
+            <h5 data-i18n="project_3_title">مستودعات لوجستية – بغداد</h5>
+            <p data-i18n="project_3_desc">تنفيذ مشروع متكامل لتخزين ونقل البضائع في منطقة التاجي.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal Viewer -->
+  <div id="modal" onclick="closeModal()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;">
+    <img id="modal-img" src="" style="max-width:90%; max-height:90%;" />
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light py-3 text-center mt-auto">
+    <p class="mb-0" data-i18n="footer">&copy; 2025 أفق العمران - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+  <script defer src="lang.js"></script>
+  <script defer src="script.min.js"></script>
+
+</body>
+</html>
